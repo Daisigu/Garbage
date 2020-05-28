@@ -1,0 +1,117 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1\slick\slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1\slick\slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+  </head>
+  <body>
+<div class="block" style="padding: 200px;">
+        <div class="characters" style="position: relative; display: inline-block; border-radius: 7% 7% 0 0; height: 400px; width: 300px; padding: 20px; text-align: center; background-color: rgb(184, 112, 226); color: rgba(255, 255, 255, 0.767);">
+            <h1>Персонажи</h1>
+            <div class="slider-for">
+                <div class="1">
+                    <p>В мокрой постели голое тело нашли—чёрный отдел
+                    Хлопнули двери,гости куда-то ушли—я не хотел
+                    Дохлые рыбы тихо осели на дно  и разбрелись  
+                    Все вы могли бы,но перестали давно—и заебись
+                    
+                             В это трудно поверить
+                             Но надо признаться,что
+                                      Мне насрать на моё лицо
+                                      Ей насрать на моё лицо
+                                      Вам насрать на моё лицо
+                                      Всем вам насрать на моё лицо.
+                    <p>Price: 1000р/в час</p>
+                    </p>
+                </div>
+                <div class="1">
+                    <p>Вот и всё что было-
+                        Не было и нету.
+                        Все слои размокли.  
+                        Все слова истлели.
+                              
+                                   Всё как у людей.
+                        
+                        В стоптанных ботинках
+                        Годы и окурки
+                        В стираных карманах 
+                        Паспорта и пальцы
+                        
+                                   Всё как у людей.
+                        
+                        Резвые колеса
+                        Прочные постройки
+                        Новые декреты 
+                        Братские могилы
+                    <p>Price: 2000р/в час</p>
+                    </p>
+                </div>
+                <div class="1">
+                    <p>Плохие деревья,плохие дома
+                        Такие плохие кусты
+                        Такие плохие какие дома
+                        Особенно эти кусты
+                        
+                               А хороший автобус уехал без нас
+                               Хороший автобус уехал прочь
+                        
+                        Такое ужасное время вощще
+                        Такие ужасные дни
+                        Такое оно это время вощще
+                        И эти которые дни
+                    <p>Price: 3000р/в час</p>
+                    </p>
+                </div>
+            </div>
+              <div class="slider-for" style="position: absolute; left: 340px; bottom: 0; max-width: 500px;">
+                    <div><img width="350" height="386" style="border-radius: 0px 20px 0px 0px " src="1.jpg" alt=""></div>
+                    <div><img width="350" height="386" style="border-radius: 0px 20px 0px 0px " src="2.jpg" alt=""></div>
+                    <div><img width="350" height="386" style="border-radius: 0px 20px 0px 0px " src="3.jpg" alt=""></div>
+                   
+              </div>
+        </div>
+        
+        <div class="nav" style="background-color: blueviolet; height: 40px; width: 690px; border-radius: 0px 0px 10px 10px">
+            <div class="slider-nav" style="text-align: center; color: wheat; padding-top: 10px;">
+               <div>Новый год</div>
+               <div>Кружок</div>
+               <div>Паша с телефоном</div>
+               
+            </div>
+        </div>
+        </div>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1\slick\slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  swipe: false,
+  infinite: true,
+  touchMove: false,
+ appendArrows: '.slider-nav',
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  swipe: false,
+  touchMove: false,
+  infinite: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+    });
+  </script>
+
+  </body>
+</html>
